@@ -10,10 +10,10 @@ const defaultTheme = {
     subHeader: '32px',
 
     headerMobile: {
-      headerOne: '50px',
+      headerOne: '35px',
       headerTwo: '16px',
       logoHeader: '25px',
-      subHeader: '32px'
+      subHeader: '24px'
     }
   },
 
