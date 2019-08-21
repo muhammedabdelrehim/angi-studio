@@ -1,12 +1,9 @@
-// Even though I could have used the evergreen-ui component for this,
-// I decided to just created a small Header component for the sake of Atomic design.
-
 import React from 'react'
 import {
+  Logo,
   HeaderOne,
   HeaderTwo,
-  HeaderThree,
-  HeaderFour
+  MainSubheader
 } from '../../styles/Header_styles'
 
 type Props = {
@@ -21,12 +18,12 @@ const H2Header = ({ children }: Props) => {
   return <HeaderTwo>{children}</HeaderTwo>
 }
 
-const H3Header = ({ children }: Props) => {
-  return <HeaderThree>{children}</HeaderThree>
+const LogoHeader = ({ children }: Props) => {
+  return <Logo>{children}</Logo>
 }
 
-const H4Header = ({ children }: Props) => {
-  return <HeaderFour>{children}</HeaderFour>
+const Subheader = ({ children }: Props) => {
+  return <MainSubheader>{children}</MainSubheader>
 }
 
-export { H1Header, H2Header, H3Header, H4Header }
+export { H1Header, H2Header, LogoHeader, Subheader }

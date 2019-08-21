@@ -1,20 +1,19 @@
-// Default theme. A single theme is added and exported as Theme. If in the future the To-do list needs a different design, a new Theme can be added besides defaultTheme.
 const defaultTheme = {
   fontFamily: '"Open Sans", Calibri, Helvetica, Tahoma, sans-serif',
 
   fontSizes: {
     paragraph: '12px',
 
-    headerOne: '22px',
+    headerOne: '55px',
     headerTwo: '18px',
-    headerThree: '16px',
-    headerFour: '14px',
+    logoHeader: '25px',
+    subHeader: '32px',
 
     headerMobile: {
-      headerOne: '18px',
+      headerOne: '50px',
       headerTwo: '16px',
-      headerThree: '14px',
-      headerFour: '12px'
+      logoHeader: '25px',
+      subHeader: '32px'
     }
   },
 
@@ -24,9 +23,9 @@ const defaultTheme = {
   },
 
   fontColor: {
-    one: '#333333',
+    one: '#0f2035',
     two: '#ffffff',
-    three: '#555555',
+    three: '#179ce4',
     four: '#aaaaaa'
   },
 
