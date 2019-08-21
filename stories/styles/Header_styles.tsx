@@ -37,6 +37,7 @@ export const HeaderTwo = styled.h2`
   font-family: ${theme.fontFamily};
   font-size: ${theme.fontSizes.headerMobile.headerTwo};
   color: ${theme.fontColor.one};
+  margin-left: ${theme.gutters.medium};
   ${tabletUp} {
     font-size: ${theme.fontSizes.headerTwo};
   }
