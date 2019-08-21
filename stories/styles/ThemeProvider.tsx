@@ -30,12 +30,17 @@ const defaultTheme = {
   },
 
   identityColors: {
-    one: '#77cc6d',
+    one: '#179ce4',
     two: '#2ac4ea',
-    three: '#f6653c',
+    three: '#9b9b9b',
     four: '#dddddd',
-    five: '#eeeeee'
+    five: '#eeeeee',
+    six: '#8AC143',
+    seven: 'red'
   },
+
+  borderRadius: '6px',
+  iconSize: '25px',
 
   gutters: {
     tiny: '5px',

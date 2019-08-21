@@ -1,0 +1,12 @@
+{
+  "data": [
+    { "text": "Reading about the Angi studio", "completed": false },
+    { "text": "Writing a recommendation letter", "completed": true },
+    {
+      "text": "Gathering a project or coding the challenge",
+      "completed": false
+    },
+    { "text": "Applying for the job", "completed": false },
+    { "text": "Reading about the Angi Studio... again", "completed": false }
+  ]
+}
