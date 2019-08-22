@@ -12,12 +12,12 @@ export const StyledFooterList = styled.ul`
   list-style: none;
   padding: 0;
   font-family: ${theme.fontFamily};
-  margin-bottom: 25px;
+  margin-bottom: ${theme.gutters.extraLarge};
 `
 
 export const StyledFooterListItem = styled.li`
-  padding: 15px 0;
-  border-bottom: 1px solid #eeeeee;
+  padding: ${theme.gutters.medium}  0;
+  border-bottom: 1px solid ${theme.identityColors.five};
   font-size: ${theme.fontSizes.paragraph}
 
   &:last-child {
@@ -40,8 +40,8 @@ export const Block = styled.div`
 export const ImageBlockWrapper = styled.div`
   width: calc(100% / 3);
   margin-right: 30px;
-  border: 1px solid #eeeeee;
-  border-radius: 6px;
+  border: 1px solid ${theme.identityColors.five};
+  border-radius: ${theme.borderRadius};
   display: none;
 
   ${mobileUp} {
@@ -52,8 +52,8 @@ export const ImageBlockWrapper = styled.div`
 export const ImageFooter = styled.img`
   width: 100%;
   vertical-align: middle;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-top-left-radius: ${theme.borderRadius};
+  border-top-right-radius: ${theme.borderRadius};
 `
 
 export const ImageBlock = styled.div`
@@ -62,7 +62,7 @@ export const ImageBlock = styled.div`
 `
 
 export const ContentFooter = styled.p`
-  padding: 15px;
+  padding: ${theme.gutters.medium};
   font-family: ${theme.fontFamily};
   font-size: ${theme.fontSizes.paragraph};
 `
