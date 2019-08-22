@@ -10,6 +10,7 @@ type Props = {
 
 type Item = {
   item: string
+  subItem: string
 }
 
 const FooterLinks = ({ listItems }: Props) => {

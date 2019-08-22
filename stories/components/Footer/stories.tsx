@@ -1,41 +1,59 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { Icon } from 'evergreen-ui'
+
+import Image from '../../assets/images/image.png'
 
 import { FooterLinks } from '../Footer'
-import { Footer, Block } from '../../styles/Footer_styles'
-import { H2Header } from '../Header'
 
-const ListOne = [
-  {
-    item: 'something'
-  },
-  {
-    item: 'something'
-  },
-  {
-    item: 'something'
-  },
-  {
-    item: 'something'
-  }
-]
+import { Agencies, Development, Conferenties } from '../../data/footer'
+
+import {
+  Footer,
+  Block,
+  ImageBlockWrapper,
+  ImageFooter,
+  ImageBlock,
+  ContentFooter,
+  Link
+} from '../../styles/Footer_styles'
+import { H2Header, H3Header, H4Header } from '../Header'
+import { theme } from '../../styles/ThemeProvider'
 
 const Story = () => {
   return (
     <>
       <H2Header>Useful Links</H2Header>
       <Footer>
+        <ImageBlockWrapper>
+          <ImageBlock>
+            <ImageFooter src={Image} alt="Footer Image" />
+          </ImageBlock>
+          <ContentFooter>
+            <H3Header>ReactJS Development</H3Header>
+            <p>
+              React makes it painless to create interactive UIs. Design simple
+              views for each state in your application and React will
+              efficiently...
+            </p>
+
+            <Link href="#">
+              Read more{' '}
+              <Icon icon="arrow-right" color={theme.identityColors.three} />
+            </Link>
+          </ContentFooter>
+        </ImageBlockWrapper>
         <Block>
-          <img src="" alt="" />
-          <H2Header>ReactJS Development</H2Header>
-          <p>
-            React makes it painless to create interactive UIs. Design simple
-            views for each state in your application and React will
-            efficiently...
-          </p>
+          <H4Header>Agencies</H4Header>
+          <FooterLinks listItems={Agencies} />
+
+          <H4Header>Development</H4Header>
+          <FooterLinks listItems={Development} />
         </Block>
-        <FooterLinks listItems={ListOne} />
-        <FooterLinks listItems={ListOne} />
+        <Block>
+          <H4Header>Conferenties</H4Header>
+          <FooterLinks listItems={Conferenties} />
+        </Block>
       </Footer>
     </>
   )
