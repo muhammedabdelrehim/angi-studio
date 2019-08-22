@@ -3,6 +3,7 @@ import { theme } from './ThemeProvider'
 
 export const Section = styled.div`
   margin: ${theme.gutters.large} 0;
+  margin-bottom: 80px;
 `
 
 export const Row = styled.div`
