@@ -2,18 +2,22 @@ const defaultTheme = {
   fontFamily: '"Open Sans", Calibri, Helvetica, Tahoma, sans-serif',
 
   fontSizes: {
-    paragraph: '12px',
+    paragraph: '18px',
 
     headerOne: '55px',
-    headerTwo: '18px',
+    headerTwo: '22px',
+    headerThree: '24px',
+    headerFour: '18px',
     logoHeader: '25px',
     subHeader: '32px',
 
     headerMobile: {
-      headerOne: '50px',
-      headerTwo: '16px',
+      headerOne: '35px',
+      headerTwo: '20px',
+      headerThree: '22px',
+      headerFour: '16px',
       logoHeader: '25px',
-      subHeader: '32px'
+      subHeader: '24px'
     }
   },
 
