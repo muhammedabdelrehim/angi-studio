@@ -46,28 +46,24 @@ type Props = {
   text?: string
   newValue?: string
   submitButton?: string
-  deleteButton?: string
   items?: ToDoItem[] // the combined collection of ToDoItems.
   completed: boolean
   addTask?: string
   newTaskAdded?: string
   taskDeleted?: string
   tooltipDelete?: string
-  titleNewTodo?: string
   currentToDos?: string
   browserSupportsSpeechRecognition?: boolean // SpeachRecognition prop
 }
 
 const ToDo = ({
   submitButton,
-  deleteButton,
   newValue,
   addTask,
   newTaskAdded,
   taskDeleted,
   tooltipDelete,
   items,
-  titleNewTodo,
   currentToDos,
   browserSupportsSpeechRecognition // for more documentation on how this works: https://www.npmjs.com/package/react-speech-recognition
 }: Props) => {
@@ -110,7 +106,6 @@ const ToDo = ({
 
   return (
     <>
-      <H2Header>{titleNewTodo}</H2Header>
       <ToDoForm onSubmit={handleSubmit}>
         <TextInput
           placeholder={addTask}
@@ -169,7 +164,6 @@ ToDo.defaultProps = {
   newTaskAdded: 'New task added!',
   taskDeleted: 'A task was deleted!',
   tooltipDelete: 'Careful now...',
-  titleNewTodo: 'New to-do',
   currentToDos: "Current to-do's",
   completed: false
 }
